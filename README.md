@@ -8,22 +8,24 @@ The tests cover key functionalities of the BrightHR application, focusing on the
 
 ## Project Structure
 
-├── .github/workflows/main.yml   # GitHub Actions workflow for CI/CD
-├── page-objects/
-│   ├── BasePage.js             # Base class with common page interactions
-│   ├── EmployeePage.js         # Page object for the Employee section
-│   └── LoginPage.js            # Page object for the Login page
+```
+├── .github/workflows/main.yml     # GitHub Actions workflow for CI/CD
+├── page-objects/                  # Page Object Model for modular test structure
+│   ├── BasePage.js                # Base class with common page interactions
+│   ├── EmployeePage.js            # Page object for the Employee section
+│   └── LoginPage.js               # Page object for the Login page
 ├── tests/
-│   └── employee.spec.js        # Test suite for employee management features
+│   └── employee.spec.js           # Test suite for employee management features
 ├── utils/
-│   ├── datePicker.js           # Utility function for date selection
-│   └── logger.js               # Utility functions for logging test steps
-├── .env.sample                 # Example environment variable file
+│   ├── datePicker.js              # Utility function for date selection
+│   └── logger.js                  # Utility functions for logging test steps
+├── .env.sample                    # Example environment variable file
 ├── .gitignore
 ├── package-lock.json
 ├── package.json
-├── playwright.config.js        # Playwright configuration file
-└── README.md                   # This file
+├── playwright.config.js           # Playwright configuration file
+└── README.md                      # This file
+```
 
 
 ## Technologies Used
