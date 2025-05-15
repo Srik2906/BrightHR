@@ -12,7 +12,7 @@ export class EmployeePage extends BasePage {
         this.createdEmployee = []
         // locators of the page Employee
         this.employeesPanel = page.locator('div[title="Employees"]')
-        this.addEmployeesButton = page.getByText('Add Employee')
+        this.addEmployeesButton = page.getByRole('button', { name: 'Add Employee' })
         this.addAnotherEmployeeButton = page.getByText('Add another Employee')
         this.firstName = page.locator('#firstName')
         this.lastName = page.locator('#lastName')
@@ -91,7 +91,7 @@ export class EmployeePage extends BasePage {
 
             // Save the employee details
             await this.clickElement(this.saveEmployee)
-            await expect(this.page.locator('h1.text-lg')).toHaveText('Success! New employee added')
+            await expect(this.page.getByRole('heading', { name: 'Success! New employee added' })).toBeVisible();
             logSuccess(`Employee ${firstName} added successfully.`)
             await this.clickElement(this.goToProfileButton)
         }
