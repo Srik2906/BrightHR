@@ -104,6 +104,7 @@ export class EmployeePage extends BasePage {
     //function to search employee using name
     async searchEmployee(name) {
         await this.fillInput(this.searchEmployeeInput, name)
+        await this.page.keyboard.press('Space')
         await expect(this.nameList).toContainText(name)
         await this.clickElement(this.nameList)
     }
