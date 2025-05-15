@@ -89,7 +89,4 @@ The Continuous Integration (CI) workflow is configured in `.github/workflows/mai
 
 7.  **Review the results:** Once the workflow completes, you can check if all the tests passed or if there were any failures. If the "Upload Playwright Report" step was successful, you will find the test report as an artifact on the workflow run page, which you can download and inspect.
 
-This manual trigger allows reviewers to independently verify the test suite and its results without needing to push new code to the repository.
 
-```
-```
