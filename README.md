@@ -9,7 +9,7 @@ The tests cover key functionalities of the BrightHR application, focusing on the
 ## Project Structure
 
 ```
-├── .github/workflows/main.yml     # GitHub Actions workflow for CI/CD
+├── .github/workflows/playwright.yml     # GitHub Actions workflow for CI/CD
 ├── page-objects/                  # Page Object Model for modular test structure
 │   ├── BasePage.js                # Base class with common page interactions
 │   ├── EmployeePage.js            # Page object for the Employee section
